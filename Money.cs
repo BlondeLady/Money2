@@ -68,11 +68,11 @@ namespace Money2
                 a = mon1._grivna + mon2._grivna + 1;
                 b = mon1._kopiyka + mon2._kopiyka - 100;
             }
-            return new Money(a, b, _dollarCost);
+            return new Money(a, b);
         }
         public static Money operator -(Money mon1, Money mon2)
         {
-            return new Money(mon1._grivna - mon2._grivna, mon1._kopiyka - mon2._kopiyka, _dollarCost);
+            return new Money(mon1._grivna - mon2._grivna, mon1._kopiyka - mon2._kopiyka);
         }
         public override string ToString() => $"{Grivna} {Kopiyka} {_dollarCost}";
         public double ToDollar()
@@ -87,4 +87,3 @@ namespace Money2
         }
     }
 }
-
