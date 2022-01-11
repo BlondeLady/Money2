@@ -8,7 +8,7 @@ namespace Money2
 {
     class Program
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
             Money mon1 = new Money();
             mon1.Grivna = 15;
@@ -25,7 +25,7 @@ namespace Money2
             Console.WriteLine($"Total in dollar:{total.ToDollar()}");
             total.FromDollar(100);
             Console.WriteLine($"Total money:{total}");
-
+            Console.ReadKey();
         }
     }
 }
